@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ElfSundae/AFNetworkingExtension.svg)](https://travis-ci.org/ElfSundae/AFNetworkingExtension)
 
-AFNetworking extensions.
+AFNetworking extension.
 
 ## Installation
 
