@@ -1,0 +1,16 @@
+PODS:
+  - AFNetworkingExtension (0.1.0)
+
+DEPENDENCIES:
+  - AFNetworkingExtension (from `.`)
+
+EXTERNAL SOURCES:
+  AFNetworkingExtension:
+    :path: "."
+
+SPEC CHECKSUMS:
+  AFNetworkingExtension: 5ce0e27e840bc16949d3b7776f8d6bb99f8bb78a
+
+COCOAPODS: 1.7.2
+
+PODFILE CHECKSUM: 630922099b2da4bdcff466c1bf8d5a38b279d513
