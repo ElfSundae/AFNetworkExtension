@@ -19,9 +19,9 @@ Pod::Spec.new do |s|
     ss.dependency 'AFNetworking/Reachability', '>= 2.0'
   end
 
-  s.subspec 'Logger' do |ss|
-    ss.source_files = 'AFNetworkingExtension/Logger/**/*.{h,m}'
-    ss.dependency 'AFNetworkActivityLogger', '~> 3.0'
-    ss.dependency 'ESFramework/Core'
-  end
+  # s.subspec 'Logger' do |ss|
+  #   ss.source_files = 'AFNetworkingExtension/Logger/**/*.{h,m}'
+  #   ss.dependency 'AFNetworkActivityLogger', '~> 3.0'
+  #   ss.dependency 'ESFramework/Core'
+  # end
 end
