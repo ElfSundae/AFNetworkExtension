@@ -1,5 +1,5 @@
 //
-//  AFNetworkingExtension.h
+//  AFNetworkActivityLogger+ESExtension.m
 //  AFNetworkingExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
@@ -8,6 +8,6 @@
 
 #import "AFNetworkActivityLogger+ESExtension.h"
 
-#if !TARGET_OS_WATCH
-#import "AFNetworkReachabilityManager+ESExtension.h"
-#endif
+@implementation AFNetworkActivityLogger (ESExtension)
+
+@end
