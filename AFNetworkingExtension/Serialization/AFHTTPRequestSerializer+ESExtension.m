@@ -49,7 +49,7 @@ ESDefineAssociatedObjectKey(HTTPRequestHeadersBlock)
                                         error:(NSError *__autoreleasing *)error
 {
     if (self.URLQueryParametersBlock) {
-        NSDictionary *query = self.URLQueryParametersBlock([NSURL URLWithString:URLString], parameters);
+        NSDictionary *query = self.URLQueryParametersBlock(method, URLString, parameters);
         if (query) {
             URLString = [URLString stringByAddingURLQueryParameters:query];
         }
