@@ -7,6 +7,7 @@
 //
 
 #import <AFNetworkActivityLogger/AFNetworkActivityLogger.h>
+#import <AFNetworking/AFHTTPSessionManager.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Toggles logging, indicates whether the logger is enabled or not.
  */
-@property (nonatomic, getter = isEnabled) BOOL enabled;
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+
+@end
+
+@interface AFHTTPSessionManager (ESActivityLogger)
+
+@property (null_resettable, nonatomic, strong) AFNetworkActivityLogger *logger;
 
 @end
 
