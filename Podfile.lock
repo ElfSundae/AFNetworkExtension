@@ -1,5 +1,9 @@
 PODS:
-  - AFNetworkingExtension (0.1.0)
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworkingExtension (0.1.0):
+    - AFNetworkingExtension/Reachability (= 0.1.0)
+  - AFNetworkingExtension/Reachability (0.1.0):
+    - AFNetworking/Reachability (>= 2.0)
 
 DEPENDENCIES:
   - AFNetworkingExtension (from `.`)
@@ -8,9 +12,16 @@ EXTERNAL SOURCES:
   AFNetworkingExtension:
     :path: "."
 
+CHECKOUT OPTIONS: 
+
 SPEC CHECKSUMS:
-  AFNetworkingExtension: 5ce0e27e840bc16949d3b7776f8d6bb99f8bb78a
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworkingExtension: a3f994287e233e6e52028c9087e8075e751dad6e
 
 COCOAPODS: 1.7.2
 
 PODFILE CHECKSUM: 630922099b2da4bdcff466c1bf8d5a38b279d513
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking

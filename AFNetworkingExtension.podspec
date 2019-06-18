@@ -7,11 +7,15 @@ Pod::Spec.new do |s|
   s.authors     = { 'Elf Sundae' => 'https://0x123.com' }
   s.source      = { :git => 'https://github.com/ElfSundae/AFNetworkingExtension.git', :tag => s.version }
 
-  s.ios.deployment_target = '8.0'
-  s.source_files = 'AFNetworkingExtension/**/*.{h,m}'
-  # s.dependency 'AFNetworking/Reachability', '>= 2.0'
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.9'
+  s.watchos.deployment_target = '2.0'
+  s.tvos.deployment_target = '9.0'
 
-  # s.subspec 'Core' do |ss|
-  #   ss.source_files = 'AFNetworkingExtension/Core/**/*.{h,m}'
-  # end
+  s.source_files = 'AFNetworkingExtension/AFNetworkingExtension.h'
+
+  s.subspec 'Reachability' do |ss|
+    ss.source_files = 'AFNetworkingExtension/Reachability/**/*.{h,m}'
+    ss.dependency 'AFNetworking/Reachability', '>= 2.0'
+  end
 end

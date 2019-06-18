@@ -8,7 +8,8 @@
 
 /* Begin PBXFileReference section */
 		E72556BF22B8CA3300ED7D7E /* AFNetworkingExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingExtension.h; sourceTree = "<group>"; };
-		E72556C022B8CA3300ED7D7E /* AFNetworkingExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingExtension.m; sourceTree = "<group>"; };
+		E725570D22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworkReachabilityManager+ESExtension.h"; sourceTree = "<group>"; };
+		E725570E22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkReachabilityManager+ESExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -23,9 +24,18 @@
 			isa = PBXGroup;
 			children = (
 				E72556BF22B8CA3300ED7D7E /* AFNetworkingExtension.h */,
-				E72556C022B8CA3300ED7D7E /* AFNetworkingExtension.m */,
+				E725570C22B8CE8400ED7D7E /* Reachability */,
 			);
 			path = AFNetworkingExtension;
+			sourceTree = "<group>";
+		};
+		E725570C22B8CE8400ED7D7E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E725570D22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.h */,
+				E725570E22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
