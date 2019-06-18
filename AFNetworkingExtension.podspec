@@ -11,10 +11,6 @@ Pod::Spec.new do |s|
   s.source_files = 'AFNetworkingExtension/AFNetworkingExtension.h'
 
   s.subspec 'Reachability' do |ss|
-    ss.ios.deployment_target = '8.0'
-    ss.osx.deployment_target = '10.9'
-    ss.tvos.deployment_target = '9.0'
-
     ss.source_files = 'AFNetworkingExtension/Reachability/**/*.{h,m}'
     ss.dependency 'AFNetworking/Reachability', '>= 2.0'
   end
