@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AFNetworkActivityLogger (ESExtension)
 
 /**
- * Start/Stop logging, indicate whether the logger is enabled or not.
+ * Toggles logging, indicates whether the logger is enabled or not.
  */
 @property (nonatomic, getter = isEnabled) BOOL enabled;
 
