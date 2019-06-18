@@ -12,6 +12,8 @@
 		E725570E22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkReachabilityManager+ESExtension.m"; sourceTree = "<group>"; };
 		E725571222B8D5FA00ED7D7E /* AFNetworkActivityLogger+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworkActivityLogger+ESExtension.h"; sourceTree = "<group>"; };
 		E725571322B8D5FA00ED7D7E /* AFNetworkActivityLogger+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkActivityLogger+ESExtension.m"; sourceTree = "<group>"; };
+		E725571522B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+ESExtension.h"; sourceTree = "<group>"; };
+		E725571622B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestSerializer+ESExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -26,8 +28,9 @@
 			isa = PBXGroup;
 			children = (
 				E72556BF22B8CA3300ED7D7E /* AFNetworkingExtension.h */,
-				E725571122B8D5A400ED7D7E /* Logger */,
 				E725570C22B8CE8400ED7D7E /* Reachability */,
+				E725571122B8D5A400ED7D7E /* Logger */,
+				E725571422B8E5D600ED7D7E /* Serialization */,
 			);
 			path = AFNetworkingExtension;
 			sourceTree = "<group>";
@@ -48,6 +51,15 @@
 				E725571322B8D5FA00ED7D7E /* AFNetworkActivityLogger+ESExtension.m */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		E725571422B8E5D600ED7D7E /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				E725571522B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.h */,
+				E725571622B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.m */,
+			);
+			path = Serialization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

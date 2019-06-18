@@ -28,4 +28,10 @@ Pod::Spec.new do |s|
     ss.dependency 'AFNetworkActivityLogger', '~> 3.0'
     ss.dependency 'ESFramework/Core', '~> 3.12'
   end
+
+  s.subspec 'Serialization' do |ss|
+    ss.source_files = 'AFNetworkingExtension/Serialization/**/*.{h,m}'
+    ss.dependency 'AFNetworking/Serialization', '~> 3.0'
+    ss.dependency 'ESFramework/Foundation', '~> 3.12'
+  end
 end
