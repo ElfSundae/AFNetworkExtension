@@ -8,16 +8,16 @@ PODS:
   - AFNetworking/Reachability (3.2.1)
   - AFNetworking/Security (3.2.1)
   - AFNetworking/Serialization (3.2.1)
-  - AFNetworkingExtension (0.0.1):
-    - AFNetworkingExtension/Logger (= 0.0.1)
-    - AFNetworkingExtension/Reachability (= 0.0.1)
-    - AFNetworkingExtension/Serialization (= 0.0.1)
-  - AFNetworkingExtension/Logger (0.0.1):
+  - AFNetworkingExtension (1.0.0):
+    - AFNetworkingExtension/Logger (= 1.0.0)
+    - AFNetworkingExtension/Reachability (= 1.0.0)
+    - AFNetworkingExtension/Serialization (= 1.0.0)
+  - AFNetworkingExtension/Logger (1.0.0):
     - AFNetworkActivityLogger (~> 3.0)
     - ESFramework/Core (~> 3.12)
-  - AFNetworkingExtension/Reachability (0.0.1):
+  - AFNetworkingExtension/Reachability (1.0.0):
     - AFNetworking/Reachability (>= 2.0)
-  - AFNetworkingExtension/Serialization (0.0.1):
+  - AFNetworkingExtension/Serialization (1.0.0):
     - AFNetworking/Serialization (~> 3.0)
     - ESFramework/Foundation (~> 3.12)
   - ESFramework/Core (3.12.0)
@@ -36,7 +36,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  AFNetworkingExtension: aa6592867ec8905137f82cce52f7811f47b6fbf3
+  AFNetworkingExtension: a6877aa9ba4d19e05edba96d9734a3368367cd87
   ESFramework: 4321c05c3e8580fb458a4dab495a560901d418f0
 
 COCOAPODS: 1.7.2
