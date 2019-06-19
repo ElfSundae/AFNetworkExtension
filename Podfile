@@ -1,8 +1,24 @@
+use_frameworks!
+
 workspace 'AFNetworkingExtension.xcworkspace'
+project 'Example/Example.xcodeproj'
 
-target 'iOS Example' do
-    project 'Example/iOS Example.xcodeproj'
-    platform :ios, '9.0'
-
+abstract_target 'Example' do
     pod 'AFNetworkingExtension', :path => '.'
+
+    target 'iOS Example' do
+        platform :ios, '9.0'
+    end
+
+    target 'macOS Example' do
+        platform :osx, '10.11'
+    end
+
+    target 'tvOS Example' do
+        platform :tvos, '9.0'
+    end
+
+    target 'watchOS Example' do
+        platform :watchos, '2.0'
+    end
 end

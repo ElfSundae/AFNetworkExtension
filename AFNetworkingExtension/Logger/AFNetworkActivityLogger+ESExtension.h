@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Toggles logging, indicates whether the logger is enabled or not.
  */
-@property (nonatomic, getter=isEnabled) BOOL enabled;
+@property (nonatomic, getter = isEnabled) BOOL enabled;
 
 @end
 
