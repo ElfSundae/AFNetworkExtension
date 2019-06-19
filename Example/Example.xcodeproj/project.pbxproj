@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E112D27F7D9803E29FC988 /* Pods_Example_macOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CEF26F38103B0B8FE9E4B20 /* Pods_Example_macOS_Example.framework */; };
-		55B6A657AC17DB3E0C11658A /* Pods_Example_watchOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04D011BB7C7084904AA0D33 /* Pods_Example_watchOS_Example.framework */; };
-		5B6B7586645CFE1EEA0632CD /* Pods_Example_tvOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA253B217F147EB0ADBAA06 /* Pods_Example_tvOS_Example.framework */; };
-		92480A657FEAAC033685B4AE /* Pods_Example_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42410881B3A82F315DBD8B3C /* Pods_Example_iOS_Example.framework */; };
+		0FAB6CCB7334197EE1A8038C /* libPods-Example-tvOS Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930ECADF11F6E7EEB68F75C3 /* libPods-Example-tvOS Example.a */; };
+		726A735B4A5C855A5BA0B7EF /* libPods-Example-watchOS Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9404DBDE04863516D23DE9C3 /* libPods-Example-watchOS Example.a */; };
+		A1C1CB4CB8D61570DB14860D /* libPods-Example-macOS Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C613EB904BE26A133C9A2E /* libPods-Example-macOS Example.a */; };
 		E7BEC84322BA53E100653343 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BEC84222BA53E100653343 /* AppDelegate.m */; };
 		E7BEC84622BA53E100653343 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BEC84522BA53E100653343 /* ViewController.m */; };
 		E7BEC84B22BA53E200653343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BEC84A22BA53E200653343 /* Assets.xcassets */; };
@@ -32,6 +31,7 @@
 		E7BEC89B22BA545F00653343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BEC89A22BA545F00653343 /* Assets.xcassets */; };
 		E7BEC89F22BA545F00653343 /* watchOS Example.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E7BEC88322BA545D00653343 /* watchOS Example.app */; };
 		E7BEC8AC22BA56F100653343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BEC8AA22BA56F100653343 /* LaunchScreen.storyboard */; };
+		EB6D45930C99486FB84B4BDD /* libPods-Example-iOS Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5396E870FB8B129A5012F254 /* libPods-Example-iOS Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +80,12 @@
 		10AC124E34418C95DD4F5E23 /* Pods-Example-tvOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-tvOS Example.release.xcconfig"; path = "Target Support Files/Pods-Example-tvOS Example/Pods-Example-tvOS Example.release.xcconfig"; sourceTree = "<group>"; };
 		2814EC38FCE465E3708A8B7E /* Pods-Example-watchOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-watchOS Example.release.xcconfig"; path = "Target Support Files/Pods-Example-watchOS Example/Pods-Example-watchOS Example.release.xcconfig"; sourceTree = "<group>"; };
 		2B56ECA70B17CFBD9A231466 /* Pods-Example-iOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS Example.release.xcconfig"; path = "Target Support Files/Pods-Example-iOS Example/Pods-Example-iOS Example.release.xcconfig"; sourceTree = "<group>"; };
-		42410881B3A82F315DBD8B3C /* Pods_Example_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DA253B217F147EB0ADBAA06 /* Pods_Example_tvOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_tvOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5396E870FB8B129A5012F254 /* libPods-Example-iOS Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example-iOS Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB253D7FECF1AD1779599C0 /* Pods-Example-iOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS Example.debug.xcconfig"; path = "Target Support Files/Pods-Example-iOS Example/Pods-Example-iOS Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8DC9D0E303D0DF513DE8F237 /* Pods-Example-tvOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-tvOS Example.debug.xcconfig"; path = "Target Support Files/Pods-Example-tvOS Example/Pods-Example-tvOS Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9CEF26F38103B0B8FE9E4B20 /* Pods_Example_macOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_macOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A04D011BB7C7084904AA0D33 /* Pods_Example_watchOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_watchOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		930ECADF11F6E7EEB68F75C3 /* libPods-Example-tvOS Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example-tvOS Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9404DBDE04863516D23DE9C3 /* libPods-Example-watchOS Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example-watchOS Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C613EB904BE26A133C9A2E /* libPods-Example-macOS Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example-macOS Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BEC83F22BA53E100653343 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BEC84122BA53E100653343 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7BEC84222BA53E100653343 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B6A657AC17DB3E0C11658A /* Pods_Example_watchOS_Example.framework in Frameworks */,
+				726A735B4A5C855A5BA0B7EF /* libPods-Example-watchOS Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92480A657FEAAC033685B4AE /* Pods_Example_iOS_Example.framework in Frameworks */,
+				EB6D45930C99486FB84B4BDD /* libPods-Example-iOS Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E112D27F7D9803E29FC988 /* Pods_Example_macOS_Example.framework in Frameworks */,
+				A1C1CB4CB8D61570DB14860D /* libPods-Example-macOS Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B6B7586645CFE1EEA0632CD /* Pods_Example_tvOS_Example.framework in Frameworks */,
+				0FAB6CCB7334197EE1A8038C /* libPods-Example-tvOS Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +283,10 @@
 		F9F26C623555E3150EA6E5B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42410881B3A82F315DBD8B3C /* Pods_Example_iOS_Example.framework */,
-				9CEF26F38103B0B8FE9E4B20 /* Pods_Example_macOS_Example.framework */,
-				4DA253B217F147EB0ADBAA06 /* Pods_Example_tvOS_Example.framework */,
-				A04D011BB7C7084904AA0D33 /* Pods_Example_watchOS_Example.framework */,
+				5396E870FB8B129A5012F254 /* libPods-Example-iOS Example.a */,
+				C6C613EB904BE26A133C9A2E /* libPods-Example-macOS Example.a */,
+				930ECADF11F6E7EEB68F75C3 /* libPods-Example-tvOS Example.a */,
+				9404DBDE04863516D23DE9C3 /* libPods-Example-watchOS Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,7 +303,6 @@
 				E7BEC83C22BA53E100653343 /* Frameworks */,
 				E7BEC83D22BA53E100653343 /* Resources */,
 				E7BEC8A722BA545F00653343 /* Embed Watch Content */,
-				3BFD85DEAF8752222A9B0AE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,7 +322,6 @@
 				E7BEC85522BA53FE00653343 /* Sources */,
 				E7BEC85622BA53FE00653343 /* Frameworks */,
 				E7BEC85722BA53FE00653343 /* Resources */,
-				3118052E9D0D59218C4E92F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,7 +340,6 @@
 				E7BEC86A22BA544C00653343 /* Sources */,
 				E7BEC86B22BA544C00653343 /* Frameworks */,
 				E7BEC86C22BA544C00653343 /* Resources */,
-				15483FE52F5378F4839DC3BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -485,57 +482,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15483FE52F5378F4839DC3BC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example-tvOS Example/Pods-Example-tvOS Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example-tvOS Example/Pods-Example-tvOS Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example-tvOS Example/Pods-Example-tvOS Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3118052E9D0D59218C4E92F1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example-macOS Example/Pods-Example-macOS Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example-macOS Example/Pods-Example-macOS Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example-macOS Example/Pods-Example-macOS Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BFD85DEAF8752222A9B0AE7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example-iOS Example/Pods-Example-iOS Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example-iOS Example/Pods-Example-iOS Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example-iOS Example/Pods-Example-iOS Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		51905F3AD0C59FC7B12A2595 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
