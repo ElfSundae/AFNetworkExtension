@@ -22,7 +22,7 @@ pod 'AFNetworkingExtension/Serialization'
 
 ### AFNetworkReachabilityManager
 
-#### Get a string representation of an `AFNetworkReachabilityStatus` value
+Get a string representation of an `AFNetworkReachabilityStatus` value:
 
 ```objc
 AFNetworkReachabilityManager *reachability = [AFNetworkReachabilityManager sharedManager];
