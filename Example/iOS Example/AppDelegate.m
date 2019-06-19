@@ -19,7 +19,6 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     self.window.backgroundColor = UIColor.whiteColor;
-    [UIView appearanceWhenContainedInInstancesOfClasses:@[ UIViewController.class ]].backgroundColor = UIColor.whiteColor;
 
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:ViewController.new];
 
