@@ -13,8 +13,8 @@ pod 'AFNetworkingExtension'
 Sub specs:
 
 ```ruby
-pod 'AFNetworkingExtension/Reachability'
 pod 'AFNetworkingExtension/Logger'
+pod 'AFNetworkingExtension/Reachability'
 pod 'AFNetworkingExtension/Serialization'
 ```
 

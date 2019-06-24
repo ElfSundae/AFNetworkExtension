@@ -14,6 +14,13 @@ Pod::Spec.new do |s|
 
   s.source_files = 'AFNetworkingExtension/AFNetworkingExtension.h'
 
+  s.subspec 'Logger' do |ss|
+    ss.source_files = 'AFNetworkingExtension/Logger/**/*.{h,m}'
+    ss.dependency 'AFNetworking/NSURLSession', '~> 3.0'
+    ss.dependency 'AFNetworkActivityLogger', '~> 3.0'
+    ss.dependency 'ESFramework/Core', '~> 3.14'
+  end
+
   s.subspec 'Reachability' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.osx.deployment_target = '10.11'
@@ -21,12 +28,6 @@ Pod::Spec.new do |s|
 
     ss.source_files = 'AFNetworkingExtension/Reachability/**/*.{h,m}'
     ss.dependency 'AFNetworking/Reachability', '>= 2.0'
-  end
-
-  s.subspec 'Logger' do |ss|
-    ss.source_files = 'AFNetworkingExtension/Logger/**/*.{h,m}'
-    ss.dependency 'AFNetworkActivityLogger', '~> 3.0'
-    ss.dependency 'ESFramework/Core', '~> 3.14'
   end
 
   s.subspec 'Serialization' do |ss|
