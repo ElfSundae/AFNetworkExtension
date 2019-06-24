@@ -8,7 +8,7 @@
 
 #import "AFHTTPSessionManager+ESExtension.h"
 
-static BOOL ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
+static BOOL _ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
 {
     if ([URL.host compare:matchURL.host options:NSCaseInsensitiveSearch] != NSOrderedSame) {
         return NO;
@@ -40,7 +40,7 @@ static BOOL ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
     for (NSURLSessionTask *task in self.tasks) {
         NSURLRequest *request = task.originalRequest;
         if ((!method || [request.HTTPMethod isEqualToString:method]) &&
-            ESIsURLMatchesURL(request.URL, url)) {
+            _ESIsURLMatchesURL(request.URL, url)) {
             [tasks addObject:task];
         }
     }
