@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * The data, upload, and download tasks currently run by the managed session.
+ * @note The `URLString` can end with "*" to match path prefix.
  */
 - (NSArray<NSURLSessionTask *> *)tasksWithURL:(NSString *)URLString method:(nullable NSString *)method;
 
