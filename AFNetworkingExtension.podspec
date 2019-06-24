@@ -21,6 +21,11 @@ Pod::Spec.new do |s|
     ss.dependency 'ESFramework/Core', '~> 3.14'
   end
 
+  s.subspec 'NSURLSession' do |ss|
+    ss.source_files = 'AFNetworkingExtension/NSURLSession/**/*.{h,m}'
+    ss.dependency 'AFNetworking/NSURLSession', '~> 3.0'
+  end
+
   s.subspec 'Reachability' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.osx.deployment_target = '10.11'

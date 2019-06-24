@@ -14,6 +14,7 @@ Sub specs:
 
 ```ruby
 pod 'AFNetworkingExtension/Logger'
+pod 'AFNetworkingExtension/NSURLSession'
 pod 'AFNetworkingExtension/Reachability'
 pod 'AFNetworkingExtension/Serialization'
 ```

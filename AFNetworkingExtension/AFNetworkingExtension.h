@@ -8,6 +8,8 @@
 
 #import "AFNetworkActivityLogger+ESExtension.h"
 
+#import "AFHTTPSessionManager+ESExtension.h"
+
 #if !TARGET_OS_WATCH
 #import "AFNetworkReachabilityManager+ESExtension.h"
 #endif
