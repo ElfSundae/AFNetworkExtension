@@ -47,8 +47,8 @@
     [manager GET:@"https://httpbin.org/get" parameters:nil progress:nil success:nil failure:nil];
 
     [manager GET:@"/users/ElfSundae/repos"
-     parameters:@{ @"type": @"all", @"sort": @"updated" }
-       progress:nil success:nil failure:nil];
+      parameters:@{ @"type": @"all", @"sort": @"updated" }
+        progress:nil success:nil failure:nil];
 }
 
 @end
