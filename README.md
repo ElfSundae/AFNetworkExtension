@@ -21,7 +21,7 @@ pod 'AFNetworkingExtension/Serialization'
 
 ## Usage
 
-### [AFNetworkActivityLogger](https://github.com/AFNetworking/AFNetworkActivityLogger)
+### [AFNetworkActivityLogger](https://github.com/AFNetworking/AFNetworkActivityLogger) extension
 
 ```objc
 NSURL *baseURL = [NSURL URLWithString:@"https://api.github.com"];
@@ -33,7 +33,7 @@ github.logger.enabled = YES;
 #endif
 ```
 
-### AFNetworkReachabilityManager
+### AFNetworkReachabilityManager extension
 
 Get a string representation of an `AFNetworkReachabilityStatus` value:
 
@@ -53,7 +53,7 @@ NSLog(@"%@", reachability.localizedNetworkReachabilityStatusString);
 NSLog(@"%@", AFNetworkReachabilityStatusString(AFNetworkReachabilityStatusReachableViaWWAN));
 ```
 
-### AFHTTPRequestSerializer
+### AFHTTPRequestSerializer extension
 
 ```objc
 sessionManager.requestSerializer.HTTPRequestHeadersBlock = ^NSDictionary<NSString *, id> * (NSURLRequest * request, id parameters) {
