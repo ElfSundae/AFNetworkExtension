@@ -21,16 +21,31 @@ pod 'AFNetworkingExtension/Serialization'
 
 ## Usage
 
+```objc
+NSURL *baseURL = [NSURL URLWithString:@"https://api.github.com"];
+AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
+```
+
 ### [AFNetworkActivityLogger](https://github.com/AFNetworking/AFNetworkActivityLogger) extension
 
 ```objc
-NSURL *baseURL = [NSURL URLWithString:@"https://api.github.com"];
-AFHTTPSessionManager *github = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
-
 #if DEBUG
-github.logger.enabled = YES;
-[github.logger setLogLevel:AFLoggerLevelDebug];
+manager.logger.enabled = YES;
+[manager.logger setLogLevel:AFLoggerLevelDebug];
 #endif
+```
+
+### AFHTTPSessionManager extension
+
+```objc
+// https://api.github.com/users/ElfSundae
+NSURL *url = [manager fullURL:@"users/ElfSundae"];
+
+// Get all POST tasks that requesting API path "/foo/bar"
+[manager tasksWithURL:@"foo/bar" method:@"POST"];
+
+// Get all tasks which API path has prefix "/users/"
+[manager tasksWithURL:@"users/*" method:nil];
 ```
 
 ### AFNetworkReachabilityManager extension
@@ -56,11 +71,11 @@ NSLog(@"%@", AFNetworkReachabilityStatusString(AFNetworkReachabilityStatusReacha
 ### AFHTTPRequestSerializer extension
 
 ```objc
-sessionManager.requestSerializer.HTTPRequestHeadersBlock = ^NSDictionary<NSString *, id> * (NSURLRequest * request, id parameters) {
+manager.requestSerializer.HTTPRequestHeadersBlock = ^NSDictionary<NSString *, id> * (NSURLRequest * request, id parameters) {
     return @{ @"FooHeader": NSUUID.UUID.UUIDString };
 };
 
-sessionManager.requestSerializer.URLQueryParametersBlock = ^NSDictionary<NSString *, id> * (NSString * method, NSString * URLString, id parameters) {
+manager.requestSerializer.URLQueryParametersBlock = ^NSDictionary<NSString *, id> * (NSString * method, NSString * URLString, id parameters) {
     return @{ @"_time": @((long)NSDate.date.timeIntervalSince1970) };
 };
 ```
