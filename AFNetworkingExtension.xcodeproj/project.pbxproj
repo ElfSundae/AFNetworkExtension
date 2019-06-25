@@ -14,8 +14,6 @@
 		E725571322B8D5FA00ED7D7E /* AFNetworkActivityLogger+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkActivityLogger+ESExtension.m"; sourceTree = "<group>"; };
 		E725571522B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+ESExtension.h"; sourceTree = "<group>"; };
 		E725571622B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestSerializer+ESExtension.m"; sourceTree = "<group>"; };
-		E76275C822C23A4F008FD72B /* AFHTTPResponseSerializer+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPResponseSerializer+ESExtension.h"; sourceTree = "<group>"; };
-		E76275C922C23A4F008FD72B /* AFHTTPResponseSerializer+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPResponseSerializer+ESExtension.m"; sourceTree = "<group>"; };
 		E79CCF9F22C0AC7900121C15 /* AFHTTPSessionManager+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+ESExtension.h"; sourceTree = "<group>"; };
 		E79CCFA022C0AC7900121C15 /* AFHTTPSessionManager+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+ESExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,8 +61,6 @@
 			children = (
 				E725571522B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.h */,
 				E725571622B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.m */,
-				E76275C822C23A4F008FD72B /* AFHTTPResponseSerializer+ESExtension.h */,
-				E76275C922C23A4F008FD72B /* AFHTTPResponseSerializer+ESExtension.m */,
 			);
 			path = Serialization;
 			sourceTree = "<group>";
