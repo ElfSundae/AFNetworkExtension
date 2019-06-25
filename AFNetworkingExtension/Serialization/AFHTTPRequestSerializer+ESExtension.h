@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NSDictionary<NSString *, id> * _Nullable (^ AFURLQueryParametersBlock)(NSString *method, NSString *URLString, id _Nullable parameters);
-typedef NSDictionary<NSString *, id> * _Nullable (^ AFHTTPRequestHeadersBlock)(NSURLRequest *request, id _Nullable parameters);
+typedef NSDictionary<NSString *, id> * _Nullable (^AFURLQueryParametersBlock)(NSString *method, NSString *URLString, id _Nullable parameters);
+typedef NSDictionary<NSString *, id> * _Nullable (^AFHTTPRequestHeadersBlock)(NSURLRequest *request, id _Nullable parameters);
 
 @interface AFHTTPRequestSerializer (ESExtension)
 
