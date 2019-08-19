@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'AFNetworkingExtension/Logger/**/*.{h,m}'
     ss.dependency 'AFNetworking/NSURLSession', '~> 3.0'
     ss.dependency 'AFNetworkActivityLogger', '~> 3.0'
-    ss.dependency 'ESFramework/Core', '~> 3.14'
+    ss.dependency 'ESFramework/Core', '~> 3.18'
   end
 
   s.subspec 'NSURLSession' do |ss|
@@ -38,6 +38,6 @@ Pod::Spec.new do |s|
   s.subspec 'Serialization' do |ss|
     ss.source_files = 'AFNetworkingExtension/Serialization/**/*.{h,m}'
     ss.dependency 'AFNetworking/Serialization', '~> 3.0'
-    ss.dependency 'ESFramework/Foundation', '~> 3.14'
+    ss.dependency 'ESFramework/Foundation', '~> 3.18'
   end
 end

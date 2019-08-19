@@ -7,6 +7,8 @@
 //
 
 #import "AFNetworkActivityLogger+ESExtension.h"
+#import <objc/runtime.h>
+#import <ESFramework/ESMacros.h>
 #import <ESFramework/ESHelpers.h>
 
 ESDefineAssociatedObjectKey(enable)

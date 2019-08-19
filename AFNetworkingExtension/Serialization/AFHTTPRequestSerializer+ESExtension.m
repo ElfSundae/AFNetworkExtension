@@ -7,6 +7,8 @@
 //
 
 #import "AFHTTPRequestSerializer+ESExtension.h"
+#import <objc/runtime.h>
+#import <ESFramework/ESMacros.h>
 #import <ESFramework/ESHelpers.h>
 #import <ESFramework/NSString+ESExtension.h>
 
