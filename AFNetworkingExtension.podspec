@@ -4,6 +4,7 @@ Pod::Spec.new do |s|
   s.license     = { :type => 'MIT', :file => 'LICENSE' }
   s.summary     = 'AFNetworking Extension'
   s.homepage    = 'https://github.com/ElfSundae/AFNetworkingExtension'
+  s.social_media_url = 'https://twitter.com/ElfSundae'
   s.authors     = { 'Elf Sundae' => 'https://0x123.com' }
   s.source      = { :git => 'https://github.com/ElfSundae/AFNetworkingExtension.git', :tag => s.version }
 
