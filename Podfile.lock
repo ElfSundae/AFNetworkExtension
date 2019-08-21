@@ -8,20 +8,20 @@ PODS:
   - AFNetworking/Reachability (3.2.1)
   - AFNetworking/Security (3.2.1)
   - AFNetworking/Serialization (3.2.1)
-  - AFNetworkingExtension (1.3.0):
-    - AFNetworkingExtension/Logger (= 1.3.0)
-    - AFNetworkingExtension/NSURLSession (= 1.3.0)
-    - AFNetworkingExtension/Reachability (= 1.3.0)
-    - AFNetworkingExtension/Serialization (= 1.3.0)
-  - AFNetworkingExtension/Logger (1.3.0):
+  - AFNetworkingExtension (1.3.1):
+    - AFNetworkingExtension/Logger (= 1.3.1)
+    - AFNetworkingExtension/NSURLSession (= 1.3.1)
+    - AFNetworkingExtension/Reachability (= 1.3.1)
+    - AFNetworkingExtension/Serialization (= 1.3.1)
+  - AFNetworkingExtension/Logger (1.3.1):
     - AFNetworkActivityLogger (~> 3.0)
     - AFNetworking/NSURLSession (~> 3.0)
     - ESFramework/Core (~> 3.18)
-  - AFNetworkingExtension/NSURLSession (1.3.0):
+  - AFNetworkingExtension/NSURLSession (1.3.1):
     - AFNetworking/NSURLSession (~> 3.0)
-  - AFNetworkingExtension/Reachability (1.3.0):
+  - AFNetworkingExtension/Reachability (1.3.1):
     - AFNetworking/Reachability (>= 2.0)
-  - AFNetworkingExtension/Serialization (1.3.0):
+  - AFNetworkingExtension/Serialization (1.3.1):
     - AFNetworking/Serialization (~> 3.0)
     - ESFramework/Foundation (~> 3.18)
   - ESFramework/Core (3.18.2)
@@ -44,7 +44,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  AFNetworkingExtension: 2b1ec2ca93973d183d7beaf96a799e1aee456fdf
+  AFNetworkingExtension: 50f86e6ca68730df29fd4f887dfc7ade330b96a3
   ESFramework: 35c9729fba95aec4ad5b6a9a4215ff1f22d953f7
 
 PODFILE CHECKSUM: 883aed8f2ac3c883c3c8eca916156ce4bb69b86d
