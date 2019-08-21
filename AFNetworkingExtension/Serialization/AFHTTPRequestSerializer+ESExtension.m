@@ -8,12 +8,11 @@
 
 #import "AFHTTPRequestSerializer+ESExtension.h"
 #import <objc/runtime.h>
-#import <ESFramework/ESMacros.h>
 #import <ESFramework/ESHelpers.h>
 #import <ESFramework/NSString+ESExtension.h>
 
-ESDefineAssociatedObjectKey(URLQueryParametersBlock)
-ESDefineAssociatedObjectKey(HTTPRequestHeadersBlock)
+static const void *URLQueryParametersBlockKey = &URLQueryParametersBlockKey;
+static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
 
 @implementation AFHTTPRequestSerializer (ESExtension)
 

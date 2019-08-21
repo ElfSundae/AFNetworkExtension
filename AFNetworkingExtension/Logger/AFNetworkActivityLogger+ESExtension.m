@@ -8,10 +8,9 @@
 
 #import "AFNetworkActivityLogger+ESExtension.h"
 #import <objc/runtime.h>
-#import <ESFramework/ESMacros.h>
 #import <ESFramework/ESHelpers.h>
 
-ESDefineAssociatedObjectKey(enable)
+static const void *enabledKey = &enabledKey;
 
 @implementation AFNetworkActivityLogger (ESExtension)
 
@@ -28,19 +27,19 @@ ESDefineAssociatedObjectKey(enable)
 {
     [self nc_startLogging];
 
-    objc_setAssociatedObject(self, enableKey, @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, enabledKey, @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)nc_stopLogging
 {
     [self nc_stopLogging];
 
-    objc_setAssociatedObject(self, enableKey, @NO, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, enabledKey, @NO, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)isEnabled
 {
-    return ESBoolValue(objc_getAssociatedObject(self, enableKey));
+    return ESBoolValue(objc_getAssociatedObject(self, enabledKey));
 }
 
 - (void)setEnabled:(BOOL)enabled
@@ -58,7 +57,7 @@ ESDefineAssociatedObjectKey(enable)
 
 @end
 
-ESDefineAssociatedObjectKey(logger)
+static const void *loggerKey = &loggerKey;
 
 @implementation AFHTTPSessionManager (ESActivityLogger)
 
