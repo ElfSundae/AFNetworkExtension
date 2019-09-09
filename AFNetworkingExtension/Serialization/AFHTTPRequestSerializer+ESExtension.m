@@ -24,12 +24,12 @@ static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
     });
 }
 
-- (AFURLQueryParametersBlock)URLQueryParametersBlock
+- (AFURLQueryBlock)URLQueryParametersBlock
 {
     return objc_getAssociatedObject(self, URLQueryParametersBlockKey);
 }
 
-- (void)setURLQueryParametersBlock:(AFURLQueryParametersBlock)block
+- (void)setURLQueryParametersBlock:(AFURLQueryBlock)block
 {
     objc_setAssociatedObject(self, URLQueryParametersBlockKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
