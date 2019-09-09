@@ -1,5 +1,5 @@
 //
-//  AFNetworkReachabilityManager+ESExtension.h
+//  AFNetworkReachabilityManager+AFEExtension.h
 //  AFNetworkingExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 FOUNDATION_EXPORT NSString *AFNetworkReachabilityStatusString(AFNetworkReachabilityStatus status);
 
-@interface AFNetworkReachabilityManager (ESExtension)
+@interface AFNetworkReachabilityManager (AFEExtension)
 
 /**
  * Returns a string representation of the current network reachability status.

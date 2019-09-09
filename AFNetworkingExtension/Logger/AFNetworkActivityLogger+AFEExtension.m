@@ -1,18 +1,18 @@
 //
-//  AFNetworkActivityLogger+ESExtension.m
+//  AFNetworkActivityLogger+AFEExtension.m
 //  AFNetworkingExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
 //
 
-#import "AFNetworkActivityLogger+ESExtension.h"
+#import "AFNetworkActivityLogger+AFEExtension.h"
 #import <objc/runtime.h>
 #import <ESFramework/ESHelpers.h>
 
 static const void *enabledKey = &enabledKey;
 
-@implementation AFNetworkActivityLogger (ESExtension)
+@implementation AFNetworkActivityLogger (AFEExtension)
 
 + (void)load
 {

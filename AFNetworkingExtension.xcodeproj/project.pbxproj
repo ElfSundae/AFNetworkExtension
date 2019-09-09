@@ -8,14 +8,14 @@
 
 /* Begin PBXFileReference section */
 		E72556BF22B8CA3300ED7D7E /* AFNetworkingExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingExtension.h; sourceTree = "<group>"; };
-		E725570D22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworkReachabilityManager+ESExtension.h"; sourceTree = "<group>"; };
-		E725570E22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkReachabilityManager+ESExtension.m"; sourceTree = "<group>"; };
-		E725571222B8D5FA00ED7D7E /* AFNetworkActivityLogger+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworkActivityLogger+ESExtension.h"; sourceTree = "<group>"; };
-		E725571322B8D5FA00ED7D7E /* AFNetworkActivityLogger+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkActivityLogger+ESExtension.m"; sourceTree = "<group>"; };
-		E725571522B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+ESExtension.h"; sourceTree = "<group>"; };
-		E725571622B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestSerializer+ESExtension.m"; sourceTree = "<group>"; };
-		E79CCF9F22C0AC7900121C15 /* AFHTTPSessionManager+ESExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+ESExtension.h"; sourceTree = "<group>"; };
-		E79CCFA022C0AC7900121C15 /* AFHTTPSessionManager+ESExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+ESExtension.m"; sourceTree = "<group>"; };
+		E725570D22B8CEE400ED7D7E /* AFNetworkReachabilityManager+AFEExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworkReachabilityManager+AFEExtension.h"; sourceTree = "<group>"; };
+		E725570E22B8CEE400ED7D7E /* AFNetworkReachabilityManager+AFEExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkReachabilityManager+AFEExtension.m"; sourceTree = "<group>"; };
+		E725571222B8D5FA00ED7D7E /* AFNetworkActivityLogger+AFEExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworkActivityLogger+AFEExtension.h"; sourceTree = "<group>"; };
+		E725571322B8D5FA00ED7D7E /* AFNetworkActivityLogger+AFEExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkActivityLogger+AFEExtension.m"; sourceTree = "<group>"; };
+		E725571522B8E63B00ED7D7E /* AFHTTPRequestSerializer+AFEExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+AFEExtension.h"; sourceTree = "<group>"; };
+		E725571622B8E63B00ED7D7E /* AFHTTPRequestSerializer+AFEExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestSerializer+AFEExtension.m"; sourceTree = "<group>"; };
+		E79CCF9F22C0AC7900121C15 /* AFHTTPSessionManager+AFEExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+AFEExtension.h"; sourceTree = "<group>"; };
+		E79CCFA022C0AC7900121C15 /* AFHTTPSessionManager+AFEExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+AFEExtension.m"; sourceTree = "<group>"; };
 		E7A8A86F2326382C00AA2E32 /* AFHTTPResponseSerializer+AFEExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPResponseSerializer+AFEExtension.h"; sourceTree = "<group>"; };
 		E7A8A8702326382C00AA2E32 /* AFHTTPResponseSerializer+AFEExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPResponseSerializer+AFEExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,8 +43,8 @@
 		E725570C22B8CE8400ED7D7E /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				E725570D22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.h */,
-				E725570E22B8CEE400ED7D7E /* AFNetworkReachabilityManager+ESExtension.m */,
+				E725570D22B8CEE400ED7D7E /* AFNetworkReachabilityManager+AFEExtension.h */,
+				E725570E22B8CEE400ED7D7E /* AFNetworkReachabilityManager+AFEExtension.m */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -52,8 +52,8 @@
 		E725571122B8D5A400ED7D7E /* Logger */ = {
 			isa = PBXGroup;
 			children = (
-				E725571222B8D5FA00ED7D7E /* AFNetworkActivityLogger+ESExtension.h */,
-				E725571322B8D5FA00ED7D7E /* AFNetworkActivityLogger+ESExtension.m */,
+				E725571222B8D5FA00ED7D7E /* AFNetworkActivityLogger+AFEExtension.h */,
+				E725571322B8D5FA00ED7D7E /* AFNetworkActivityLogger+AFEExtension.m */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -61,8 +61,8 @@
 		E725571422B8E5D600ED7D7E /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				E725571522B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.h */,
-				E725571622B8E63B00ED7D7E /* AFHTTPRequestSerializer+ESExtension.m */,
+				E725571522B8E63B00ED7D7E /* AFHTTPRequestSerializer+AFEExtension.h */,
+				E725571622B8E63B00ED7D7E /* AFHTTPRequestSerializer+AFEExtension.m */,
 				E7A8A86F2326382C00AA2E32 /* AFHTTPResponseSerializer+AFEExtension.h */,
 				E7A8A8702326382C00AA2E32 /* AFHTTPResponseSerializer+AFEExtension.m */,
 			);
@@ -72,8 +72,8 @@
 		E79CCF9E22C0AC1F00121C15 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				E79CCF9F22C0AC7900121C15 /* AFHTTPSessionManager+ESExtension.h */,
-				E79CCFA022C0AC7900121C15 /* AFHTTPSessionManager+ESExtension.m */,
+				E79CCF9F22C0AC7900121C15 /* AFHTTPSessionManager+AFEExtension.h */,
+				E79CCFA022C0AC7900121C15 /* AFHTTPSessionManager+AFEExtension.m */,
 			);
 			path = NSURLSession;
 			sourceTree = "<group>";

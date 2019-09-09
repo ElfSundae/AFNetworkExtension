@@ -1,12 +1,12 @@
 //
-//  AFHTTPRequestSerializer+ESExtension.m
+//  AFHTTPRequestSerializer+AFEExtension.m
 //  AFNetworkingExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
 //
 
-#import "AFHTTPRequestSerializer+ESExtension.h"
+#import "AFHTTPRequestSerializer+AFEExtension.h"
 #import <objc/runtime.h>
 #import <ESFramework/ESHelpers.h>
 #import <ESFramework/NSString+ESExtension.h>
@@ -14,13 +14,13 @@
 static const void *URLQueryParametersBlockKey = &URLQueryParametersBlockKey;
 static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
 
-@implementation AFHTTPRequestSerializer (ESExtension)
+@implementation AFHTTPRequestSerializer (AFEExtension)
 
 + (void)load
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        ESSwizzleInstanceMethod(self, @selector(requestWithMethod:URLString:parameters:error:), @selector(es_requestWithMethod:URLString:parameters:error:));
+        ESSwizzleInstanceMethod(self, @selector(requestWithMethod:URLString:parameters:error:), @selector(afe_requestWithMethod:URLString:parameters:error:));
     });
 }
 
@@ -44,10 +44,10 @@ static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
     objc_setAssociatedObject(self, HTTPRequestHeadersBlockKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (NSMutableURLRequest *)es_requestWithMethod:(NSString *)method
-                                    URLString:(NSString *)URLString
-                                   parameters:(id)parameters
-                                        error:(NSError *__autoreleasing *)error
+- (NSMutableURLRequest *)afe_requestWithMethod:(NSString *)method
+                                     URLString:(NSString *)URLString
+                                    parameters:(id)parameters
+                                         error:(NSError *__autoreleasing *)error
 {
     if (self.URLQueryParametersBlock) {
         NSDictionary *query = self.URLQueryParametersBlock(method, URLString, parameters);
@@ -56,7 +56,7 @@ static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
         }
     }
 
-    NSMutableURLRequest *request = [self es_requestWithMethod:method URLString:URLString parameters:parameters error:error];
+    NSMutableURLRequest *request = [self afe_requestWithMethod:method URLString:URLString parameters:parameters error:error];
 
     if (request) {
         if (self.HTTPRequestHeadersBlock) {

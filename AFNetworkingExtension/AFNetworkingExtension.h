@@ -7,16 +7,16 @@
 //
 
 // Logger
-#import "AFNetworkActivityLogger+ESExtension.h"
+#import "AFNetworkActivityLogger+AFEExtension.h"
 
 // NSURLSession
-#import "AFHTTPSessionManager+ESExtension.h"
+#import "AFHTTPSessionManager+AFEExtension.h"
 
 // Reachability
 #if !TARGET_OS_WATCH
-#import "AFNetworkReachabilityManager+ESExtension.h"
+#import "AFNetworkReachabilityManager+AFEExtension.h"
 #endif
 
 // Serialization
-#import "AFHTTPRequestSerializer+ESExtension.h"
+#import "AFHTTPRequestSerializer+AFEExtension.h"
 #import "AFHTTPResponseSerializer+AFEExtension.h"
