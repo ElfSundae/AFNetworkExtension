@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AFHTTPSessionManager (ESActivityLogger)
 
+/**
+ * The network activity logger instance.
+ */
 @property (null_resettable, nonatomic, strong) AFNetworkActivityLogger *logger;
 
 @end
