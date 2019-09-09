@@ -39,8 +39,8 @@ static BOOL _ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
 
     for (NSURLSessionTask *task in self.tasks) {
         NSURLRequest *request = task.originalRequest;
-        if ((!method || [request.HTTPMethod isEqualToString:method]) &&
-            _ESIsURLMatchesURL(request.URL, url)) {
+        if ((!method || [request.HTTPMethod isEqualToString:method])
+            && _ESIsURLMatchesURL(request.URL, url)) {
             [tasks addObject:task];
         }
     }
