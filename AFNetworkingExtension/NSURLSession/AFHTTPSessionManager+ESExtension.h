@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Returns the full URL of the given path relative to the base URL.
  */
-- (NSURL *)fullURL:(NSString *)path;
+- (NSURL *)URLWithPath:(NSString *)path;
 
 /**
  * The data, upload, and download tasks currently run by the managed session.

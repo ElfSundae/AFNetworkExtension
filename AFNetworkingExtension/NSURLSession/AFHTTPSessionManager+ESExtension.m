@@ -25,7 +25,7 @@ static BOOL _ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
 
 @implementation AFHTTPSessionManager (ESExtension)
 
-- (NSURL *)fullURL:(NSString *)path
+- (NSURL *)URLWithPath:(NSString *)path
 {
     return [NSURL URLWithString:path relativeToURL:self.baseURL];
 }
