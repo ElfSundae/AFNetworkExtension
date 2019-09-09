@@ -16,12 +16,12 @@ typedef NSDictionary<NSString *, id> * _Nullable (^ AFHTTPRequestHeadersBlock)(N
 @interface AFHTTPRequestSerializer (ESExtension)
 
 /**
- * The block that may return additional URL query parameters for the request.
+ * The block used to add additional URL query parameters for the request.
  */
 @property (nullable, nonatomic, copy) AFURLQueryParametersBlock URLQueryParametersBlock;
 
 /**
- * The block that may return additional HTTP request headers.
+ * The block used to set additional HTTP request headers.
  * @discussion You can remove an existing header by giving [NSNull null] as
  * the header value.
  */
