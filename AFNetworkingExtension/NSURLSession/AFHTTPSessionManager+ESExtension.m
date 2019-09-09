@@ -30,9 +30,15 @@ static BOOL _ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
     return [NSURL URLWithString:path relativeToURL:self.baseURL];
 }
 
-- (NSArray<NSURLSessionTask *> *)tasksWithURL:(NSString *)URLString method:(nullable NSString *)method
+- (NSArray<NSURLSessionTask *> *)tasksWithPath:(NSString *)path
 {
-    NSURL *url = [self fullURL:URLString];
+    return [self tasksWithPath:path method:nil];
+}
+
+- (NSArray<NSURLSessionTask *> *)tasksWithPath:(NSString *)path
+                                        method:(nullable NSString *)method
+{
+    NSURL *url = [self URLWithPath:path];
     method = [method uppercaseString];
 
     NSMutableArray *tasks = [NSMutableArray array];
@@ -45,7 +51,7 @@ static BOOL _ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
         }
     }
 
-    return [tasks copy];
+    return tasks;
 }
 
 @end
