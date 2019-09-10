@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'AFNetworkingExtension'
-  s.version     = '1.3.1'
+  s.version     = '1.4.0'
   s.license     = { :type => 'MIT', :file => 'LICENSE' }
   s.summary     = 'AFNetworking Extension'
   s.homepage    = 'https://github.com/ElfSundae/AFNetworkingExtension'
