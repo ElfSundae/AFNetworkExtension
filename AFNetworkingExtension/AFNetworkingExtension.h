@@ -19,4 +19,3 @@
 
 // Serialization
 #import "AFHTTPRequestSerializer+AFEExtension.h"
-#import "AFHTTPResponseSerializer+AFEExtension.h"
