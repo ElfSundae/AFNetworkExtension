@@ -39,13 +39,13 @@ manager.logger.enabled = YES;
 
 ```objc
 // https://api.github.com/users/ElfSundae
-NSURL *url = [manager fullURL:@"users/ElfSundae"];
-
-// Get all POST tasks that requesting API path "/foo/bar"
-[manager tasksWithURL:@"foo/bar" method:@"POST"];
+NSURL *url = [manager URLWithPath:@"users/ElfSundae"];
 
 // Get all tasks which API path has prefix "/users/"
-[manager tasksWithURL:@"users/*" method:nil];
+[manager tasksWithPath:@"users/*"];
+
+// Get all POST tasks that requesting API path "/foo/bar"
+[manager tasksWithPath:@"foo/bar" method:@"POST"];
 ```
 
 ### AFNetworkReachabilityManager extension
