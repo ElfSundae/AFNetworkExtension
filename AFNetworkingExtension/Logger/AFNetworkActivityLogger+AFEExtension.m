@@ -18,21 +18,21 @@ static const void *enabledKey = &enabledKey;
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        ESSwizzleInstanceMethod(self, @selector(startLogging), @selector(nc_startLogging));
-        ESSwizzleInstanceMethod(self, @selector(stopLogging), @selector(nc_stopLogging));
+        ESSwizzleInstanceMethod(self, @selector(startLogging), @selector(afe_startLogging));
+        ESSwizzleInstanceMethod(self, @selector(stopLogging), @selector(afe_stopLogging));
     });
 }
 
-- (void)nc_startLogging
+- (void)afe_startLogging
 {
-    [self nc_startLogging];
+    [self afe_startLogging];
 
     objc_setAssociatedObject(self, enabledKey, @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)nc_stopLogging
+- (void)afe_stopLogging
 {
-    [self nc_stopLogging];
+    [self afe_stopLogging];
 
     objc_setAssociatedObject(self, enabledKey, @NO, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
