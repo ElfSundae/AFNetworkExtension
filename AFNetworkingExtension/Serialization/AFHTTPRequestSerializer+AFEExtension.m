@@ -8,8 +8,7 @@
 
 #import "AFHTTPRequestSerializer+AFEExtension.h"
 #import <objc/runtime.h>
-#import <ESFramework/ESHelpers.h>
-#import <ESFramework/NSString+ESExtension.h>
+#import <ESFramework/ESFramework.h>
 
 static const void *URLQueryParametersBlockKey = &URLQueryParametersBlockKey;
 static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;

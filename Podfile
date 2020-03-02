@@ -7,7 +7,7 @@ abstract_target 'Example' do
     pod 'AFNetworkingExtension', :path => '.'
 
     target 'iOS Example' do
-        platform :ios, '9.0'
+        platform :ios, '8.0'
     end
 
     target 'macOS Example' do

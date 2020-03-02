@@ -16,23 +16,21 @@ PODS:
   - AFNetworkingExtension/Logger (1.4.0):
     - AFNetworkActivityLogger (~> 3.0)
     - AFNetworking/NSURLSession (~> 3.0)
-    - ESFramework/Core (~> 3.18)
+    - ESFramework/Foundation (~> 3.19)
   - AFNetworkingExtension/NSURLSession (1.4.0):
     - AFNetworking/NSURLSession (~> 3.0)
   - AFNetworkingExtension/Reachability (1.4.0):
-    - AFNetworking/Reachability (>= 2.0)
+    - AFNetworking/Reachability (~> 3.0)
   - AFNetworkingExtension/Serialization (1.4.0):
     - AFNetworking/Serialization (~> 3.0)
-    - ESFramework/Foundation (~> 3.18)
-  - ESFramework/Core (3.18.6)
-  - ESFramework/Foundation (3.18.6):
-    - ESFramework/Core
+    - ESFramework/Foundation (~> 3.19)
+  - ESFramework/Foundation (3.19.0)
 
 DEPENDENCIES:
   - AFNetworkingExtension (from `.`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworkActivityLogger
     - AFNetworking
     - ESFramework
@@ -44,9 +42,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: e77f68d014becb33c4306a23f56a64906ff72670
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  AFNetworkingExtension: 8c8fba56b0aa28bcaebc9fbc099564f2027a1c3c
-  ESFramework: 9dcbb0e69253ad69c33f5a48a93e17da6a082535
+  AFNetworkingExtension: cbb45238a804957ce3bfdd5644ee39fcc5ba291f
+  ESFramework: f0f64f12871225fde6ce5107cd911442e5b68521
 
-PODFILE CHECKSUM: 883aed8f2ac3c883c3c8eca916156ce4bb69b86d
+PODFILE CHECKSUM: 1c6a1d3cec453aaadbf8c33df711e4a39125a52c
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.0
