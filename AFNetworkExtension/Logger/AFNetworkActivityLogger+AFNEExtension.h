@@ -1,6 +1,6 @@
 //
-//  AFNetworkActivityLogger+AFEExtension.h
-//  AFNetworkingExtension
+//  AFNetworkActivityLogger+AFNEExtension.h
+//  AFNetworkExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AFNetworkActivityLogger (AFEExtension)
+@interface AFNetworkActivityLogger (AFNEExtension)
 
 /**
  * Toggles logging, indicates whether the logger is enabled or not.
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface AFHTTPSessionManager (ESActivityLogger)
+@interface AFHTTPSessionManager (AFNEActivityLogger)
 
 /**
  * The network activity logger instance.

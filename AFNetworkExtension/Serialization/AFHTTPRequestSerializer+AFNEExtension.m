@@ -1,19 +1,19 @@
 //
-//  AFHTTPRequestSerializer+AFEExtension.m
-//  AFNetworkingExtension
+//  AFHTTPRequestSerializer+AFNEExtension.m
+//  AFNetworkExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
 //
 
-#import "AFHTTPRequestSerializer+AFEExtension.h"
+#import "AFHTTPRequestSerializer+AFNEExtension.h"
 #import <objc/runtime.h>
 #import <ESFramework/ESFramework.h>
 
 static const void *URLQueryParametersBlockKey = &URLQueryParametersBlockKey;
 static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
 
-@implementation AFHTTPRequestSerializer (AFEExtension)
+@implementation AFHTTPRequestSerializer (AFNEExtension)
 
 + (void)load
 {

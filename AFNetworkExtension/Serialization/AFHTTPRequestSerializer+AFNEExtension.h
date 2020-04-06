@@ -1,6 +1,6 @@
 //
-//  AFHTTPRequestSerializer+AFEExtension.h
-//  AFNetworkingExtension
+//  AFHTTPRequestSerializer+AFNEExtension.h
+//  AFNetworkExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NSDictionary<NSString *, id> * _Nullable (^ AFURLQueryParametersBlock)(NSString *method, NSString *URLString, id _Nullable parameters);
 typedef NSDictionary<NSString *, id> * _Nullable (^ AFHTTPRequestHeadersBlock)(NSURLRequest *request, id _Nullable parameters);
 
-@interface AFHTTPRequestSerializer (AFEExtension)
+@interface AFHTTPRequestSerializer (AFNEExtension)
 
 /**
  * The block used to add additional URL query parameters for the request.

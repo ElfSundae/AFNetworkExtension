@@ -1,12 +1,13 @@
 //
-//  AFNetworkReachabilityManager+AFEExtension.m
-//  AFNetworkingExtension
+//  AFNetworkReachabilityManager+AFNEExtension.m
+//  AFNetworkExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
 //
 
-#import "AFNetworkReachabilityManager+AFEExtension.h"
+#import "AFNetworkReachabilityManager+AFNEExtension.h"
+
 #if !TARGET_OS_WATCH
 
 NSString *AFNetworkReachabilityStatusString(AFNetworkReachabilityStatus status)
@@ -24,7 +25,7 @@ NSString *AFNetworkReachabilityStatusString(AFNetworkReachabilityStatus status)
     }
 }
 
-@implementation AFNetworkReachabilityManager (AFEExtension)
+@implementation AFNetworkReachabilityManager (AFNEExtension)
 
 - (NSString *)networkReachabilityStatusString
 {

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <AFNetworkingExtension/AFNetworkingExtension.h>
+#import <AFNetworkExtension/AFNetworkExtension.h>
 
 @interface ViewController ()
 
@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 
-    self.title = @"AFNetworkingExtension";
+    self.title = @"AFNetworkExtension";
 
     [AFNetworkReachabilityManager.sharedManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         NSLog(@"Network status: %@", AFNetworkReachabilityStatusString(status));
@@ -41,16 +41,16 @@
         return @{ @"_time": @((long)NSDate.date.timeIntervalSince1970) };
     };
 
-    [manager GET:@"users/ElfSundae" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+    [manager GET:@"users/ElfSundae" parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         // NSLog(@"responseObject: %@", responseObject);
     } failure:nil];
 
     // Should not log
-    [manager GET:@"https://httpbin.org/get" parameters:nil progress:nil success:nil failure:nil];
+    [manager GET:@"https://httpbin.org/get" parameters:nil headers:nil progress:nil success:nil failure:nil];
 
     [manager GET:@"/users/ElfSundae/repos"
       parameters:@{ @"type": @"all", @"sort": @"updated" }
-        progress:nil success:nil failure:nil];
+         headers:nil progress:nil success:nil failure:nil];
 }
 
 @end

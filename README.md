@@ -1,22 +1,22 @@
-# AFNetworkingExtension
+# AFNetworkExtension
 
-[![Build Status](https://travis-ci.org/ElfSundae/AFNetworkingExtension.svg)](https://travis-ci.org/ElfSundae/AFNetworkingExtension)
+[![Build Status](https://travis-ci.org/ElfSundae/AFNetworkExtension.svg)](https://travis-ci.org/ElfSundae/AFNetworkExtension)
 
-[AFNetworking](https://github.com/AFNetworking/AFNetworking) extension.
+[AFNetworking](https://github.com/AFNetworking/AFNetworking) extensions.
 
 ## Installation
 
 ```ruby
-pod 'AFNetworkingExtension'
+pod 'AFNetworkExtension'
 ```
 
 Sub specs:
 
 ```ruby
-pod 'AFNetworkingExtension/Logger'
-pod 'AFNetworkingExtension/NSURLSession'
-pod 'AFNetworkingExtension/Reachability'
-pod 'AFNetworkingExtension/Serialization'
+pod 'AFNetworkExtension/Logger'
+pod 'AFNetworkExtension/NSURLSession'
+pod 'AFNetworkExtension/Reachability'
+pod 'AFNetworkExtension/Serialization'
 ```
 
 ## Usage
@@ -82,4 +82,4 @@ manager.requestSerializer.URLQueryParametersBlock = ^NSDictionary<NSString *, id
 
 ## License
 
-AFNetworkingExtension is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+AFNetworkExtension is available under the MIT license. See the [LICENSE](LICENSE) file for more info.

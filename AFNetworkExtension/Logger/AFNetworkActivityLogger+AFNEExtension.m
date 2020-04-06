@@ -1,38 +1,38 @@
 //
-//  AFNetworkActivityLogger+AFEExtension.m
-//  AFNetworkingExtension
+//  AFNetworkActivityLogger+AFNEExtension.m
+//  AFNetworkExtension
 //
 //  Created by Elf Sundae on 2019/06/18.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
 //
 
-#import "AFNetworkActivityLogger+AFEExtension.h"
+#import "AFNetworkActivityLogger+AFNEExtension.h"
 #import <objc/runtime.h>
 #import <ESFramework/ESFramework.h>
 
 static const void *enabledKey = &enabledKey;
 
-@implementation AFNetworkActivityLogger (AFEExtension)
+@implementation AFNetworkActivityLogger (AFNEExtension)
 
 + (void)load
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        ESSwizzleInstanceMethod(self, @selector(startLogging), @selector(afe_startLogging));
-        ESSwizzleInstanceMethod(self, @selector(stopLogging), @selector(afe_stopLogging));
+        ESSwizzleInstanceMethod(self, @selector(startLogging), @selector(afne_startLogging));
+        ESSwizzleInstanceMethod(self, @selector(stopLogging), @selector(afne_stopLogging));
     });
 }
 
-- (void)afe_startLogging
+- (void)afne_startLogging
 {
-    [self afe_startLogging];
+    [self afne_startLogging];
 
     objc_setAssociatedObject(self, enabledKey, @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)afe_stopLogging
+- (void)afne_stopLogging
 {
-    [self afe_stopLogging];
+    [self afne_stopLogging];
 
     objc_setAssociatedObject(self, enabledKey, @NO, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -59,7 +59,7 @@ static const void *enabledKey = &enabledKey;
 
 static const void *loggerKey = &loggerKey;
 
-@implementation AFHTTPSessionManager (ESActivityLogger)
+@implementation AFHTTPSessionManager (AFNEActivityLogger)
 
 - (AFNetworkActivityLogger *)logger
 {
@@ -96,7 +96,7 @@ static const void *loggerKey = &loggerKey;
 
     if (logger.filterPredicate) {
         predicate = [[NSCompoundPredicate alloc]
-                     initWithType:NSOrPredicateType
+                      initWithType:NSOrPredicateType
                      subpredicates:@[ predicate, logger.filterPredicate ]];
     }
 

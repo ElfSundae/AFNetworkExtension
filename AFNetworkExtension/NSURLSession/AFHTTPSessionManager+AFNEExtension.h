@@ -1,6 +1,6 @@
 //
-//  AFHTTPSessionManager+AFEExtension.h
-//  AFNetworkingExtension
+//  AFHTTPSessionManager+AFNEExtension.h
+//  AFNetworkExtension
 //
 //  Created by Elf Sundae on 2019/06/24.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AFHTTPSessionManager (AFEExtension)
+@interface AFHTTPSessionManager (AFNEExtension)
 
 /**
  * Returns the full URL of the given path relative to the base URL.

@@ -1,37 +1,29 @@
 PODS:
   - AFNetworkActivityLogger (3.0.0.1):
     - AFNetworking/NSURLSession (>= 3.0)
-  - AFNetworking (3.2.2):
-    - AFNetworking/NSURLSession (= 3.2.2)
-    - AFNetworking/Reachability (= 3.2.2)
-    - AFNetworking/Security (= 3.2.2)
-    - AFNetworking/Serialization (= 3.2.2)
-    - AFNetworking/UIKit (= 3.2.2)
-  - AFNetworking/NSURLSession (3.2.2):
+  - AFNetworkExtension (1.4.1):
+    - AFNetworkExtension/Logger (= 1.4.1)
+    - AFNetworkExtension/NSURLSession (= 1.4.1)
+    - AFNetworkExtension/Reachability (= 1.4.1)
+    - AFNetworkExtension/Serialization (= 1.4.1)
+  - AFNetworkExtension/Logger (1.4.1):
+    - AFNetworkActivityLogger (>= 3.0)
+    - AFNetworking/NSURLSession (>= 3.0)
+    - ESFramework (~> 3.22)
+  - AFNetworkExtension/NSURLSession (1.4.1):
+    - AFNetworking/NSURLSession (>= 3.0)
+  - AFNetworkExtension/Reachability (1.4.1):
+    - AFNetworking/Reachability (>= 3.0)
+  - AFNetworkExtension/Serialization (1.4.1):
+    - AFNetworking/Serialization (>= 3.0)
+    - ESFramework (~> 3.22)
+  - AFNetworking/NSURLSession (4.0.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.2)
-  - AFNetworking/Security (3.2.2)
-  - AFNetworking/Serialization (3.2.2)
-  - AFNetworking/UIKit (3.2.2):
-    - AFNetworking/NSURLSession
-  - AFNetworkingExtension (1.4.1):
-    - AFNetworkingExtension/Logger (= 1.4.1)
-    - AFNetworkingExtension/NSURLSession (= 1.4.1)
-    - AFNetworkingExtension/Reachability (= 1.4.1)
-    - AFNetworkingExtension/Serialization (= 1.4.1)
-  - AFNetworkingExtension/Logger (1.4.1):
-    - AFNetworkActivityLogger
-    - AFNetworking/NSURLSession (>= 3.0)
-    - ESFramework/Foundation (~> 3.19)
-  - AFNetworkingExtension/NSURLSession (1.4.1):
-    - AFNetworking/NSURLSession (>= 3.0)
-  - AFNetworkingExtension/Reachability (1.4.1):
-    - AFNetworking/Reachability (>= 3.0)
-  - AFNetworkingExtension/Serialization (1.4.1):
-    - AFNetworking/Serialization (>= 3.0)
-    - ESFramework/Foundation (~> 3.19)
+  - AFNetworking/Reachability (4.0.0.1)
+  - AFNetworking/Security (4.0.0.1)
+  - AFNetworking/Serialization (4.0.0.1)
   - ESFramework (3.22.0):
     - ESFramework/Foundation (= 3.22.0)
     - ESFramework/Network (= 3.22.0)
@@ -43,10 +35,7 @@ PODS:
     - ESFramework/Network
 
 DEPENDENCIES:
-  - AFNetworkActivityLogger
-  - AFNetworking (~> 3.0)
-  - AFNetworkingExtension (from `.`)
-  - ESFramework
+  - AFNetworkExtension (from `.`)
 
 SPEC REPOS:
   https://github.com/ElfSundae/CocoaPods-Specs.git:
@@ -56,15 +45,15 @@ SPEC REPOS:
     - ESFramework
 
 EXTERNAL SOURCES:
-  AFNetworkingExtension:
+  AFNetworkExtension:
     :path: "."
 
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: 9e239d3eaf9fcb71dfac5635c49458453f6e1ec7
-  AFNetworking: 1736e9b0219ee3971a36b0d0deb59417dc3902f1
-  AFNetworkingExtension: 0e403e9bfc889e5f023df631135e6479d6f26123
+  AFNetworkExtension: 8f5aebc1c916159e3e4703e3f6b1958c0307a66b
+  AFNetworking: f8b5270727ce91c612946f284847b0f3bcf1975c
   ESFramework: af5dfb07453406a2d5b6a6a8e2ffbaf939fa69ba
 
-PODFILE CHECKSUM: 18bb5ec75ee4d7ba249e504cef02416363fa3db8
+PODFILE CHECKSUM: a0ecefb74cc402c41f0fa8bfb06f6742fb255794
 
 COCOAPODS: 1.9.1

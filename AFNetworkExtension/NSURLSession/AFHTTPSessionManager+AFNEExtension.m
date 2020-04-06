@@ -1,12 +1,12 @@
 //
-//  AFHTTPSessionManager+AFEExtension.m
-//  AFNetworkingExtension
+//  AFHTTPSessionManager+AFNEExtension.m
+//  AFNetworkExtension
 //
 //  Created by Elf Sundae on 2019/06/24.
 //  Copyright © 2019 https://0x123.com. All rights reserved.
 //
 
-#import "AFHTTPSessionManager+AFEExtension.h"
+#import "AFHTTPSessionManager+AFNEExtension.h"
 
 static BOOL _ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
 {
@@ -23,7 +23,7 @@ static BOOL _ESIsURLMatchesURL(NSURL *URL, NSURL *matchURL)
     }
 }
 
-@implementation AFHTTPSessionManager (AFEExtension)
+@implementation AFHTTPSessionManager (AFNEExtension)
 
 - (NSURL *)URLWithPath:(NSString *)path
 {
