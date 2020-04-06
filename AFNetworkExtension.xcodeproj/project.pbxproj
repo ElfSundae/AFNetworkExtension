@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1221812358DD43BDDD8F02DD /* AFNetworkExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 271CF8DE903DAC1AB36827CC /* AFNetworkExtension.h */; };
+		19F1C5109A4850CF5CF09AEC /* libPods-iOS Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB44FD70A485389BF12BD57 /* libPods-iOS Example.a */; };
 		2A94AC5E718FAB7975874AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220EE0FF9BC592680E4E0A53 /* LaunchScreen.storyboard */; };
 		30AD566D7A08A1805B0E6660 /* AFHTTPSessionManager+AFNEExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AFC847A9736179475332778 /* AFHTTPSessionManager+AFNEExtension.h */; };
-		5118DCFA20906A72E0F2FB9F /* libPods-iOS Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82982714069858848538633C /* libPods-iOS Example.a */; };
 		56D32CAD4E55821266C2A10B /* AFNetworkReachabilityManager+AFNEExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 25DD2F612536B034D3F01168 /* AFNetworkReachabilityManager+AFNEExtension.h */; };
 		6BDA240E4534B6DF361AA410 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEA73FF88A1687E866D8561 /* AppDelegate.m */; };
 		7147FD6E58046E0528266AB3 /* AFNetworkActivityLogger+AFNEExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E1C7FBF55A370E5AD4FA977 /* AFNetworkActivityLogger+AFNEExtension.h */; };
@@ -48,18 +48,18 @@
 		25DD2F612536B034D3F01168 /* AFNetworkReachabilityManager+AFNEExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworkReachabilityManager+AFNEExtension.h"; sourceTree = "<group>"; };
 		271CF8DE903DAC1AB36827CC /* AFNetworkExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkExtension.h; sourceTree = "<group>"; };
 		27DA9D128D4234FE0079D68F /* AFNetworkExtension.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = AFNetworkExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		29FC311EBB9D03045D822379 /* Pods-iOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.debug.xcconfig"; path = "Target Support Files/Pods-iOS Example/Pods-iOS Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2DB25F530A4F01C1BDE4E145 /* Pods-iOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.debug.xcconfig"; path = "Target Support Files/Pods-iOS Example/Pods-iOS Example.debug.xcconfig"; sourceTree = "<group>"; };
 		52675E7D507988D921289FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C45951E1F60D521D0575A25 /* iOS Example.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CB40F853C1DC46878BEF9A /* AFNetworkActivityLogger+AFNEExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkActivityLogger+AFNEExtension.m"; sourceTree = "<group>"; };
 		6C47ABF7265CDF804BE50081 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78C136E7E37D0FB00D7E6E8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		82982714069858848538633C /* libPods-iOS Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		888A0990B957255BA8F12972 /* AFHTTPSessionManager+AFNEExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+AFNEExtension.m"; sourceTree = "<group>"; };
 		8A978046B0027F902AB26028 /* AFHTTPRequestSerializer+AFNEExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+AFNEExtension.h"; sourceTree = "<group>"; };
 		8AFC847A9736179475332778 /* AFHTTPSessionManager+AFNEExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+AFNEExtension.h"; sourceTree = "<group>"; };
 		963921E803843452FF42EE67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AB68C5A53EA268DE26CBC36F /* Pods-iOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.release.xcconfig"; path = "Target Support Files/Pods-iOS Example/Pods-iOS Example.release.xcconfig"; sourceTree = "<group>"; };
+		BFB44FD70A485389BF12BD57 /* libPods-iOS Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B00844E0F6AFDCD51DCEE9 /* Pods-iOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.release.xcconfig"; path = "Target Support Files/Pods-iOS Example/Pods-iOS Example.release.xcconfig"; sourceTree = "<group>"; };
 		D430F74816C1317234C69F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D8629B802A1DEB42221C4C9E /* AFNetworkReachabilityManager+AFNEExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkReachabilityManager+AFNEExtension.m"; sourceTree = "<group>"; };
 		EEFD91B2C1539F18B46E036F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,18 +67,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B6FA56F6EF9EEFADA8D51411 /* Frameworks */ = {
+		4954FE6AE53D610343EFE921 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5118DCFA20906A72E0F2FB9F /* libPods-iOS Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F705D50F6AA2FBD317D5E85C /* Frameworks */ = {
+		AA11E6EEAD9B00B94909ADD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19F1C5109A4850CF5CF09AEC /* libPods-iOS Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +103,14 @@
 				2CFDA3E32FFEF371186BA999 /* iOS Example */,
 			);
 			path = Examples;
+			sourceTree = "<group>";
+		};
+		1DC0192BF755317BFC5160B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFB44FD70A485389BF12BD57 /* libPods-iOS Example.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2CFDA3E32FFEF371186BA999 /* iOS Example */ = {
@@ -138,16 +146,6 @@
 			path = Serialization;
 			sourceTree = "<group>";
 		};
-		69ED258028010AE1CF7D1652 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				29FC311EBB9D03045D822379 /* Pods-iOS Example.debug.xcconfig */,
-				AB68C5A53EA268DE26CBC36F /* Pods-iOS Example.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		7BEA2BF796CD2A9DD2E74446 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +153,16 @@
 				D8629B802A1DEB42221C4C9E /* AFNetworkReachabilityManager+AFNEExtension.m */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		7FFA661A13B024899462687B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DB25F530A4F01C1BDE4E145 /* Pods-iOS Example.debug.xcconfig */,
+				C3B00844E0F6AFDCD51DCEE9 /* Pods-iOS Example.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		936C9A31823B6529BFF1810E /* Products */ = {
@@ -172,8 +180,8 @@
 				068CDCABF45A7275048AF17F /* AFNetworkExtension */,
 				1BC193649FE9411BDBC2A5B3 /* Examples */,
 				936C9A31823B6529BFF1810E /* Products */,
-				69ED258028010AE1CF7D1652 /* Pods */,
-				F5A964932874DD3B974C0323 /* Frameworks */,
+				7FFA661A13B024899462687B /* Pods */,
+				1DC0192BF755317BFC5160B8 /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -189,14 +197,6 @@
 			path = Logger;
 			sourceTree = "<group>";
 		};
-		F5A964932874DD3B974C0323 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				82982714069858848538633C /* libPods-iOS Example.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,10 +204,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9552E2C3818AFC8DAA8DE29F /* Build configuration list for PBXNativeTarget "iOS Example" */;
 			buildPhases = (
-				9B6A571B3DADDB42D8249E22 /* [CP] Check Pods Manifest.lock */,
+				9638A6568B8CC4BF83A0196D /* [CP] Check Pods Manifest.lock */,
 				BB15D3DDEF50E0BCAAC80BDA /* Sources */,
 				61E11D57387BB63BA1778A71 /* Resources */,
-				B6FA56F6EF9EEFADA8D51411 /* Frameworks */,
+				AA11E6EEAD9B00B94909ADD5 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,7 +224,7 @@
 			buildPhases = (
 				54AECD19932F6543DB762E70 /* CopyFiles */,
 				1A3C392F990FAF916CF89670 /* Sources */,
-				F705D50F6AA2FBD317D5E85C /* Frameworks */,
+				4954FE6AE53D610343EFE921 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,7 +281,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9B6A571B3DADDB42D8249E22 /* [CP] Check Pods Manifest.lock */ = {
+		9638A6568B8CC4BF83A0196D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,7 +358,7 @@
 		};
 		46F416B54BA99E0E7576349D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB68C5A53EA268DE26CBC36F /* Pods-iOS Example.release.xcconfig */;
+			baseConfigurationReference = C3B00844E0F6AFDCD51DCEE9 /* Pods-iOS Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -434,7 +434,7 @@
 		};
 		94C85E9DD7BA325278C8FD42 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29FC311EBB9D03045D822379 /* Pods-iOS Example.debug.xcconfig */;
+			baseConfigurationReference = 2DB25F530A4F01C1BDE4E145 /* Pods-iOS Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

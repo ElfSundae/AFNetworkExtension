@@ -12,6 +12,17 @@
 pod 'AFNetworkExtension'
 ```
 
+You may also like to install my patched [`AFNetworking`](https://github.com/ElfSundae/AFNetworking) and [`AFNetworkActivityLogger`](https://github.com/ElfSundae/CocoaPods-Specs/tree/master/Specs/AFNetworkActivityLogger) pods, just add my spec-repo source URL before the Trunk source in your `Podfile`:
+
+```ruby
+source 'https://github.com/ElfSundae/CocoaPods-Specs.git'
+source 'https://cdn.cocoapods.org/'
+
+target 'Example' do
+    pod 'AFNetworkExtension'
+end
+```
+
 ## Usage
 
 ```objc
