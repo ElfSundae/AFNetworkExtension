@@ -1,22 +1,15 @@
 # AFNetworkExtension
 
-[![Build Status](https://travis-ci.org/ElfSundae/AFNetworkExtension.svg)](https://travis-ci.org/ElfSundae/AFNetworkExtension)
+[![Build status](https://github.com/ElfSundae/AFNetworkExtension/workflows/Build/badge.svg)](https://github.com/ElfSundae/AFNetworkExtension/actions?query=workflow%3ABuild)
+![CocoaPods](https://img.shields.io/cocoapods/v/AFNetworkExtension)
+![CocoaPods platforms](https://img.shields.io/cocoapods/p/AFNetworkExtension)
 
-[AFNetworking](https://github.com/AFNetworking/AFNetworking) extensions.
+[AFNetworking](https://github.com/AFNetworking/AFNetworking) 3/4 extensions.
 
 ## Installation
 
 ```ruby
 pod 'AFNetworkExtension'
-```
-
-Sub specs:
-
-```ruby
-pod 'AFNetworkExtension/Logger'
-pod 'AFNetworkExtension/NSURLSession'
-pod 'AFNetworkExtension/Reachability'
-pod 'AFNetworkExtension/Serialization'
 ```
 
 ## Usage
