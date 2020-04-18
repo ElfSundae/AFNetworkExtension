@@ -19,13 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Returns the tasks currently run by the managed session.
- * @note The `URLString` may end with "*" to match path prefix.
+ * @note The `path` may be ended with "*" to match path prefix.
  */
 - (NSArray<NSURLSessionTask *> *)tasksWithPath:(NSString *)path;
 
 /**
  * Returns the tasks currently run by the managed session.
- * @note The `URLString` may end with "*" to match path prefix.
+ * @note The `path` may be ended with "*" to match path prefix.
  */
 - (NSArray<NSURLSessionTask *> *)tasksWithPath:(NSString *)path
                                         method:(nullable NSString *)method;
