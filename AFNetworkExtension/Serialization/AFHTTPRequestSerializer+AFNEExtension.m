@@ -44,9 +44,9 @@ static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
 }
 
 - (NSMutableURLRequest *)afne_requestWithMethod:(NSString *)method
-                                     URLString:(NSString *)URLString
-                                    parameters:(id)parameters
-                                         error:(NSError *__autoreleasing *)error
+                                      URLString:(NSString *)URLString
+                                     parameters:(id)parameters
+                                          error:(NSError *__autoreleasing *)error
 {
     if (self.URLQueryParametersBlock) {
         NSDictionary *query = self.URLQueryParametersBlock(method, URLString, parameters);
