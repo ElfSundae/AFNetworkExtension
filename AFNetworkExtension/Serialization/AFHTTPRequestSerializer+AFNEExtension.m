@@ -19,7 +19,7 @@ static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        ESSwizzleInstanceMethod(self, @selector(requestWithMethod:URLString:parameters:error:), @selector(afe_requestWithMethod:URLString:parameters:error:));
+        ESSwizzleInstanceMethod(self, @selector(requestWithMethod:URLString:parameters:error:), @selector(afne_requestWithMethod:URLString:parameters:error:));
     });
 }
 
@@ -43,7 +43,7 @@ static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
     objc_setAssociatedObject(self, HTTPRequestHeadersBlockKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (NSMutableURLRequest *)afe_requestWithMethod:(NSString *)method
+- (NSMutableURLRequest *)afne_requestWithMethod:(NSString *)method
                                      URLString:(NSString *)URLString
                                     parameters:(id)parameters
                                          error:(NSError *__autoreleasing *)error
@@ -55,7 +55,7 @@ static const void *HTTPRequestHeadersBlockKey = &HTTPRequestHeadersBlockKey;
         }
     }
 
-    NSMutableURLRequest *request = [self afe_requestWithMethod:method URLString:URLString parameters:parameters error:error];
+    NSMutableURLRequest *request = [self afne_requestWithMethod:method URLString:URLString parameters:parameters error:error];
 
     if (request) {
         if (self.HTTPRequestHeadersBlock) {
