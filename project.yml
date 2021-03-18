@@ -32,7 +32,7 @@ targetTemplates:
 
 targets:
   AFNetworkExtension:
-    type: library.static
+    type: framework
     platform: iOS
     sources: [AFNetworkExtension]
     settings:
